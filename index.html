@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>T1013 - Pickup Labels</title>
+	<link rel="icon" href="/favicon.ico" />
+    	<link rel="stylesheet" type="text/css" href="style.css?v=2" />
+	<script type="text/javascript" src="qr.js"></script>
+	<script type="text/javascript" src="script.js?v=2"></script>
+</head>
+<body>
+	<div id="input">
+		<form name="label" autocomplete="off">
+			<h2>Pickup Labels</h2>
+			<dl>
+				<dt>Prefix:</dt> <dd>
+					<select name="prefix" tabIndex="1">
+						<option value="GM">GM</option>
+						<option value="CL">CL</option>
+						<option value="FZ">FZ</option>
+						<option value="AB">AB</option>
+					</select>
+				</dd>
+				<dt>Area:</dt> <dd>
+					<input type="text" name="area_start" maxlength="3" size="2" tabIndex="2" placeholder="1" required /> - <input type="text" name="area_end" maxlength="3" size="2" tabIndex="3" placeholder="9" />
+				</dd>
+				<dt>Aisle:</dt> <dd>
+					<input type="text" name="aisle_start" maxlength="1" size="2" tabIndex="4" placeholder="0" required /> - <input type="text" name="aisle_end" maxlength="1" size="2" tabIndex="5" placeholder="10" />
+				</dd>
+				<dt>Section:</dt> <dd>
+					<input type="text" name="section_start" maxlength="1" size="2" tabIndex="6" placeholder="A" autocapitalize="characters" required /> - <input type="text" name="section_end" maxlength="1" size="2" tabIndex="7" placeholder="Z" autocapitalize="characters" />
+				</dd>
+				<dt>Shelf:</dt> <dd>
+					<input type="text" name="shelf_start" maxlength="2" size="2" tabIndex="8" placeholder="1" required /> - <input type="text" name="shelf_end" maxlength="2" size="2" tabIndex="9" placeholder="99" />
+				</dd>
+				<dt>Bin:</dt> <dd>
+					<input type="text" name="waco_start" maxlength="2" size="2" tabIndex="10" placeholder="1" required /> - <input type="text" name="waco_end" maxlength="2" size="2" tabIndex="11" placeholder="99" />
+				</dd>
+			</dl>
+			<input type="submit" value="Submit" tabIndex="12" />  <input type="reset" value="Reset" />
+		</form>
+	</div>
+	<div id="container"></div>
+</body>
+</html>
